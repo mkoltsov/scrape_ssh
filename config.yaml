@@ -1,0 +1,5 @@
+confluence:
+  url: "https://confluence.corp.com/"
+  page_id: 102944631
+  hostname_column_title: "Controller"
+  ip_column_title: "IPAddress"
