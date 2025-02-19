@@ -20,7 +20,8 @@ from bs4 import BeautifulSoup
 def read_config():
     """Read and parse the config.yaml file"""
     try:
-        with open('config.yaml', 'r') as file:
+
+        with open(os.path.join(os.path.dirname(__file__),"config.yaml"), 'r')  as file:
             return yaml.safe_load(file)
     except FileNotFoundError:
         print("Error: config.yaml file not found")
